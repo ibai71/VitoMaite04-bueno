@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>IndexLogeado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexcss.css">
+        <script src="indexedprueba.js"></script>
+        <script src="foto.js"></script>
+        <script src="indexjs.js"></script>
+    </head>
+    <body>
+         <header>
+        <h1>Bienvenido a Vitomaite</h1>
+        <p>Encuentra a tu persona especial hoy</p>
+        <div class="logo"></div>
+    </header>
+        
+        <nav class="header-nav">
+        <!-- Enlaces a la izquierda -->
+        <div class="nav-left">
+            <a href="modificarUsuario.html" class="nav-link">Modificar Usuario</a>
+            
+
+            <!-- Menú desplegable -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Aficiones</button>
+                <div class="dropdown-content">
+                    <a href="bajaAficion.html">Baja Aficiones</a>
+                    <a href="altaAficion.html">Alta Aficiones</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropdown-btn">Búsqueda</button>
+                <div class="dropdown-content">
+                    <a href="busquedaGeolocalizacion.html">Geolocalización</a>
+                    <a href="indexAficiones.html">Aficiones</a>
+                </div>
+            </div>
+            
+            <a href="verLikes.html" class="nav-link">Ver likes</a>
+            
+        </div>
+
+        <!-- Enlace a la derecha -->
+        <div class="nav-right">
+            <div class="user-info">
+        <span id="user-name" class="user-name"></span>
+        <img id="user-photo" class="user-photo" src="" alt="Foto de usuario">
+    </div>
+            <a href="index.html" class="nav-link" onclick="logout()">Log out</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h2>Formulario de Búsqueda</h2>
+        <form id="datingForm">
+            <!-- Qué buscas -->
+            <label for="queBuscas">¿Qué buscas?</label>
+            <select id="queBuscas" name="queBuscas" required>
+                <option value="">Seleccione...</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="ambos">Ambos</option>
+            </select>
+
+            <!-- Edad -->
+            <label for="edad">Rango de Edad</label>
+            <select id="edad" name="edad" required>
+                <option value="">Seleccione...</option>
+                <option value="18-25">18-25 años</option>
+                <option value="26-35">26-35 años</option>
+                <option value="36-45">36-45 años</option>
+                <option value="46+">46 años o más</option>
+            </select>
+
+            <!-- Ciudad -->
+            <label for="ciudad">Ciudad</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="">Seleccione...</option>
+                <option value="vitoria">Vitoria</option>
+                <option value="donosti">Donosti</option>
+                <option value="bilbao">Bilbao</option>
+            </select>
+
+            <button type="button" onclick="handleSearchClick2()">Buscar</button>
+        </form>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; VitoMaite04. Todos los derechos reservados.</p>
+    </footer>
+    
+    
+    
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Modificar usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexcss.css">
+        <script src="indexedprueba.js"></script>
+        
+    </head>
+    <body>
+         <header>
+        <h1>Bienvenido a Vitomaite</h1>
+        <p>Modifica tu usuario</p>
+        <div class="logo"></div>
+    </header>
+        <nav class="header-nav">
+     
+        <!-- Enlace a la derecha -->
+        <div class="nav-right">
+            <a href="indexLogeado.html" class="nav-link">Volver</a>
+        </div>
+    </nav>
+    
+    <main>
+        <form id="modificarUsuarioForm">
+            <div class="input-group">
+                <label for="ciudad">Ciudad</label>
+                <select id="ciudad" name="ciudad" required>
+                <option value="">Seleccione...</option>
+                <option value="vitoria">Vitoria</option>
+                <option value="donosti">Donosti</option>
+                <option value="bilbao">Bilbao</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+    <label for="foto">Foto (en formato base64):</label>
+    <input type="file" id="foto" accept="image/*">
+    <div id="previewContainer">
+        <img id="preview" src="" alt="Previsualización de la foto" style="display: none; max-width: 100%; height: auto;">
+    </div>
+</div>
+            
+            
+
+            <button type="button" onclick="modificarUsuario()">Guardar Cambios</button>
+        </form>
+    </main>
+        
+        
+        
+        
+        <!-- Pie de Página -->
+    <footer>
+        <p>&copy; VitoMaite04. Todos los derechos reservados.</p>
+    </footer>
+        <script src="modificarUsuario.js"></script>
+    </body>
+</html>
