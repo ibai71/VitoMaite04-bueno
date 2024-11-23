@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="indexcss.css" type="text/css"/>
+
+        <title>Proyecto1Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+           
+    </head>
+    <body>
+         <header>
+        <h1>Bienvenido a Vitomaite</h1>
+        <p>Encuentra a tu persona especial hoy</p>
+        <div class="logo"></div>
+    </header>
+        
+         <nav class="header-nav">
+         <div class="nav-right">
+            <a href="login.html" class="nav-link">Log In</a>
+        </div>
+         
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h2>Formulario de Búsqueda</h2>
+        <form id="datingForm">
+            <!-- Qué buscas -->
+            <label for="queBuscas">¿Qué buscas?</label>
+            <select id="queBuscas" name="queBuscas" required>
+                <option value="">Seleccione...</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="ambos">Ambos</option>
+            </select>
+
+            <!-- Edad -->
+            <label for="edad">Rango de Edad</label>
+            <select id="edad" name="edad" required>
+                <option value="">Seleccione...</option>
+                <option value="18-25">18-25 años</option>
+                <option value="26-35">26-35 años</option>
+                <option value="36-45">36-45 años</option>
+                <option value="46+">46 años o más</option>
+            </select>
+
+            <!-- Ciudad -->
+            <label for="ciudad">Ciudad</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="">Seleccione...</option>
+                <option value="vitoria">Vitoria</option>
+                <option value="donosti">Donosti</option>
+                <option value="bilbao">Bilbao</option>
+            </select>
+            
+             
+
+            <button type="button" onclick="handleSearchClick()">Buscar</button>
+        </form>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; VitoMaite04. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="indexedPrueba.js"></script> 
+    <script src="indexjs.js"></script>
+    
+    </body>
+</html>
+
